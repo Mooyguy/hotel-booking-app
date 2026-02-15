@@ -19,6 +19,8 @@ build/
 .env
 .env.local
 .env.*.local
+/.env
+/.env.*
 
 # Mac
 .DS_Store
