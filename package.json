@@ -4,10 +4,10 @@
   "description": "A hotel booking application with features for browsing rooms, booking, and managing user data.",
   "main": "app.js",
   "scripts": {
-    "start": "node hotel-booking-app/app.js",
-    "dev": "nodemon hotel-booking-app/app.js",
-    "dev:all": "start-server-and-test dev http://localhost:3000 \"open http://localhost:3000\"",
-    "init-db": "node init_db.js"
+     "start": "node app.js",
+  "dev": "nodemon app.js",
+  "dev:all": "start-server-and-test dev http://localhost:3000 \"open http://localhost:3000\"",
+  "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
