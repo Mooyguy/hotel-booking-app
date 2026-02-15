@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 a588302f52d481cd90474a1784ed585e41c50d21 Mooyguy <muyiwaoladipoo@gmail.com> 1771175420 -0600	commit (initial): Initial commit: app files (exclude node_modules)
+a588302f52d481cd90474a1784ed585e41c50d21 0c32f25e9e881afb613549e0a79855f67fd6504e Mooyguy <muyiwaoladipoo@gmail.com> 1771178966 -0600	commit: Ensure root app.js entrypoint for Elastic Beanstalk
+0c32f25e9e881afb613549e0a79855f67fd6504e ec31d3fe1370010e66a2f93ecd384d9906c47a42 Mooyguy <muyiwaoladipoo@gmail.com> 1771179408 -0600	commit: Add root entrypoint and Procfile; fix package.json for EB deployment
+ec31d3fe1370010e66a2f93ecd384d9906c47a42 23ac35ca0006ace809497ab876b31e9618b8dadd Mooyguy <muyiwaoladipoo@gmail.com> 1771181353 -0600	commit: Sync changes: apply local edits (remove src/app.js)
+23ac35ca0006ace809497ab876b31e9618b8dadd 46c607e684e798b91a4bf0fe6e8c7c68f745f15c Mooyguy <muyiwaoladipoo@gmail.com> 1771181793 -0600	commit: Recommit: sync changes
+46c607e684e798b91a4bf0fe6e8c7c68f745f15c 72db72617bec408156c33e974489d243d4ee8352 Mooyguy <muyiwaoladipoo@gmail.com> 1771182323 -0600	commit: Add root app.js delegating to src/app for EB entrypoint
+72db72617bec408156c33e974489d243d4ee8352 237a581ae931c0a62c5a64dddd7e49c95189b5a3 Mooyguy <muyiwaoladipoo@gmail.com> 1771184301 -0600	commit: dev:all -> use port 8080
+237a581ae931c0a62c5a64dddd7e49c95189b5a3 aed481121cc329bf929ba862aca0a94e65a22454 Mooyguy <muyiwaoladipoo@gmail.com> 1771184398 -0600	commit: dev:all: pass URL to open tool (fix mac open invocation)

@@ -1,0 +1,14 @@
+<h2>Available Rooms</h2>
+<div class="grid">
+    <% rooms.forEach(r=> { %>
+        <div class="card">
+            <img src="<%= r.image %>" alt="<%= r.title %>">
+            <h3>
+                <%= r.title %>
+            </h3>
+            <p class="price">$<%= r.price %>
+            </p>
+            <a class="btn" href="/booking?room=<%= r.id %>">Book</a>
+        </div>
+        <% }) %>
+</div>

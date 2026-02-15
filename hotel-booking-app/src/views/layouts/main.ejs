@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="/" class="brand">
+            <img src="/images/Hotel Outside.jpg" alt="Hotel">
+            <span>My Hotel</span>
+        </a>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a class="cta" href="/booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- flash messages -->
+            <% if (success && success.length) { %>
+                <div class="flash flash-success">
+                    <%= success[0] %>
+                </div>
+                <% } %>
+                    <% if (error && error.length) { %>
+                        <div class="flash flash-error">
+                            <%= error[0] %>
+                        </div>
+                        <% } %>
+
+                            <%- body %>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hotel Booking App. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
