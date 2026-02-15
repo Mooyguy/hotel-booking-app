@@ -1,20 +1,26 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo Installing root dependencies
-      - cd hotel-booking-app || exit 0
-      - npm ci
+      - echo "Installing dependencies..."
+      - npm install
   pre_build:
     commands:
-      - echo Running tests
-      - npm test || true
+      - echo "Pre-build phase started on `date`"
+      - echo "Dependencies installed successfully"
   build:
     commands:
-      - echo Build phase (nothing to compile for this app)
+      - echo "Build phase started on `date`"
+      - echo "Running tests..."
+      - npm test
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+
 artifacts:
   files:
     - '**/*'
-  base-directory: .
+  name: hotel-booking-app-$(date +%Y-%m-%d)
