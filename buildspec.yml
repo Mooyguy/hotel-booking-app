@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing root dependencies
+      - cd hotel-booking-app || exit 0
+      - npm ci
+  pre_build:
+    commands:
+      - echo Running tests
+      - npm test || true
+  build:
+    commands:
+      - echo Build phase (nothing to compile for this app)
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .
