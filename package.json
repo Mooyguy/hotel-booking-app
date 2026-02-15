@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "dev:all": "start-server-and-test dev http://localhost:8080 open"
+    "dev:all": "start-server-and-test dev http://localhost:8080 \"open http://localhost:8080\""
   },
   "dependencies": {
     "body-parser": "^1.20.2",
