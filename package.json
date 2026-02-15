@@ -1,0 +1,31 @@
+{
+  "name": "hotel-booking-app",
+  "version": "1.0.0",
+  "description": "A hotel booking application with features for browsing rooms, booking, and managing user data.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+  "express-session": "^1.17.3",
+  "connect-flash": "^0.1.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "hotel",
+    "booking",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,38 @@
+<h1>All Bookings</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Arrival</th>
+            <th>Leaving</th>
+            <th>Guests</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% bookings.forEach(b=> { %>
+            <tr>
+                <td>
+                    <%= b.id %>
+                </td>
+                <td>
+                    <%= b.firstName %>
+                        <%= b.lastName %>
+                </td>
+                <td>
+                    <%= b.phone %>
+                </td>
+                <td>
+                    <%= b.arrivalDate %>
+                </td>
+                <td>
+                    <%= b.leavingDate %>
+                </td>
+                <td>
+                    <%= b.numberOfPeople %>
+                </td>
+            </tr>
+            <% }) %>
+    </tbody>
+</table>
